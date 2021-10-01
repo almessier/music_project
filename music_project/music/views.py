@@ -27,7 +27,7 @@ class SongDetail(APIView):
 
     def get_object(self, pk):
         try:
-            return Song.object.get(pk=pk)
+            return Song.objects.get(pk=pk)
         except Song.DoesNotExist:
             raise Http404
 

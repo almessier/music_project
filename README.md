@@ -1,0 +1,1 @@
+This is a REST web API made with Django REST Framework. It has a database that stores songs with multiple properties attached to them. I made GET, POST, PUT, and DELETE requests with Postman to showcase its functionality.

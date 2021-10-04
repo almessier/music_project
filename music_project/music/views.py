@@ -57,7 +57,7 @@ class SongLike(APIView):
         except Song.DoesNotExist:
             raise Http404
 
-    def put(self, request, pk):
+    def patch(self, request, pk):
         song = self.get_object(pk)
         song.likes += 1
         serializer = SongSerializer(song, data=request.data, partial=True)
